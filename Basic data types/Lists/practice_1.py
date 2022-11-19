@@ -46,3 +46,30 @@
 # [1, 5, 9, 10]
 # [9, 5, 1]
 
+
+############ Solution ###############
+
+if __name__ == '__main__':
+    N = int(input())
+
+list = []
+
+for i in range(N):
+  
+  inputVar = input().split()
+
+  if inputVar[0] =="insert":
+    list.insert(int(inputVar[1]), int(inputVar[2]))
+  elif inputVar[0] == "print":
+    print(list)
+  elif inputVar[0] == "remove":
+    list.remove(int(inputVar[1]))
+  elif inputVar[0] == "append":
+    list.append(int(inputVar[1]))
+  elif inputVar[0] == "sort":
+    list.sort()
+  elif inputVar[0] == "pop":
+    list.pop()
+  elif inputVar[0] == "reverse":
+    list.reverse()
+
