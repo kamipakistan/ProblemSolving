@@ -42,9 +42,12 @@ for i in range(n):
     name, number = input().split()
     d[name] = number
 
-for i in range(n):
-    name = input()
-    if name in d:
-        print(f"{name}={d[name]}")
-    else:
-        print("Not found")
+while True:
+    try:
+        name = input()
+        if name in d:
+            print(f"{name}={d[name]}")
+        else:
+            print("Not found")
+    except EOFError:
+            break
