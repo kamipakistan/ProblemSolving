@@ -26,6 +26,13 @@ Sample Output
 # ================================== Solution =====================================
 # =================================================================================
 
+import math
+import os
+import random
+import re
+import sys
+
+#
 # Complete the 'factorial' function below.
 #
 # The function is expected to return an INTEGER.
@@ -49,3 +56,4 @@ if __name__ == '__main__':
     fptr.write(str(result) + '\n')
 
     fptr.close()
+
